@@ -16,4 +16,15 @@ palpites.textContent += palpiteUsuario + " ";
 
 if (palpiteUsuario === numeroAleatorio) {
     ultimoResultado.textContent = "Parabéns! Você Acertou!";
+    ultimoResultado.style.backgroundColor = "green";
+    baixoOuAlto.textContent = "";
+    finalizarJogo();
+} else {
+    ultimoResultado.textContent = "Errado";
+    ultimoResultado.style.backgroundColor = "red";
+    if (palpiteUsuario < numeroAleatiorio) {
+        baixoOuAlto.textContent = "O último palpite foi muito baixo";
+    } else if (palpiteUsuario > numeroAleatorio) {
+      baixoOuAlto.textContent = "O último palpite foi muito baixo;
+    }
 }
