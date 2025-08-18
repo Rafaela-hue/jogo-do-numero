@@ -40,3 +40,23 @@ if (palpiteUsuario === numeroAleatorio) {
    }
 
     envioPalpite.addEventListener('click', verificarPalpite);
+
+function finalizarJogo()  {
+    campoPalpite.disabled = true;
+    envioPlapite.disabled = true;
+    botaoReiniciar = document.createElement('button');
+    document.body.appendChild(botaoReiniciar);
+    botaoreiniciar.textContent = 'reiniciar Jogo';
+    botaoReiniciar.classList.add('botaoReiniciar');
+    document.body.appendChild(botaoReiniciar);
+    botaoReiniciar.addEventListener('click', reiniciarJogo);
+}
+
+function reiniciarJogo() {
+    contagemPlapites = 1;
+    const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p'}
+for {const paragrafoReiniciar of paragrafosReiniciar) {
+    paragrafoReiniciar.textcontent = "";
+}
+    
+    
