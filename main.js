@@ -1,5 +1,5 @@
 let numeroAleatorio = Math.floor(Math.random() *100) +1;
-const palpites = document.querySelector('palpites');
+const palpites = document.querySelector('#palpites');
 const ultimoResultado = document.querySelector('ultimoResultado');
 const baixoOuAlto = document.querySelector('baixoOuAlto');
 const envioPalpite = document.querySelector('envioPalpite');
@@ -22,15 +22,15 @@ if (palpiteUsuario === numeroAleatorio) {
     finalizarJogo();
 }  else if (contagemPalpites === 10) {
   ultimoResultado.textContent = "FIM DE JOGO!!";
-  baixoOuAlto.textcontent = "";
+  baixoOuAlto.textContent = "";
   finalizarJogo();
 } else {
     ultimoResultado.textContent = "Errado";
     ultimoResultado.style.backgroundColor = "red";
-    if (palpiteUsuario < numeroAleatiorio) {
+    if (palpiteUsuario < numeroAleatorio) {
         baixoOuAlto.textContent = "O último palpite foi muito baixo";
     } else if (palpiteUsuario > numeroAleatorio) {
-      baixoOuAlto.textContent = "O último palpite foi muito baixo;
+      baixoOuAlto.textContent = "O último palpite foi muito baixo";
     }
 }
 
@@ -43,10 +43,10 @@ if (palpiteUsuario === numeroAleatorio) {
 
 function finalizarJogo()  {
     campoPalpite.disabled = true;
-    envioPlapite.disabled = true;
+    envioPalpite.disabled = true;
     botaoReiniciar = document.createElement('button');
     document.body.appendChild(botaoReiniciar);
-    botaoreiniciar.textContent = 'reiniciar Jogo';
+    botaoReiniciar.textContent = 'reiniciar Jogo';
     botaoReiniciar.classList.add('botaoReiniciar');
     botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
@@ -54,7 +54,7 @@ function finalizarJogo()  {
 function reiniciarJogo() {
     contagemPalpites = 1;
     const paragrafosReiniciar = document.querySelectorAll('.paragrafosResultados p'}
-for {const paragrafoReiniciar of paragrafosReiniciar) {
+for (const paragrafoReiniciar of paragrafosReiniciar) {
     paragrafoReiniciar.textcontent = "";
 }
   
