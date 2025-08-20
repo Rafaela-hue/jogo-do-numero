@@ -21,7 +21,7 @@ if (palpiteUsuario === numeroAleatorio) {
     baixoOuAlto.textContent = "";
     finalizarJogo();
 }  else if (contagemPalpites === 10) {
-  ultimoResultado.textcontent = "FIM DE JOGO!!";
+  ultimoResultado.textContent = "FIM DE JOGO!!";
   baixoOuAlto.textcontent = "";
   finalizarJogo();
 } else {
@@ -48,7 +48,6 @@ function finalizarJogo()  {
     document.body.appendChild(botaoReiniciar);
     botaoreiniciar.textContent = 'reiniciar Jogo';
     botaoReiniciar.classList.add('botaoReiniciar');
-    document.body.appendChild(botaoReiniciar);
     botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
 
